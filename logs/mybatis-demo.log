@@ -1,0 +1,115 @@
+[2025-07-03 20:27:53.172] INFO  com.bronya.LogTest - 这是一条INFO信息
+[2025-07-03 20:27:53.174] DEBUG com.bronya.LogTest - 这是一条DEBUG信息
+[2025-07-03 20:27:53.176] ERROR com.bronya.LogTest - 这是一条ERROR信息
+java.lang.Exception: 测试异常
+	at com.bronya.LogTest.main(LogTest.java:12)
+[2025-07-03 20:27:53.176] ERROR com.bronya.LogTest - 数学运算错误
+java.lang.ArithmeticException: / by zero
+	at com.bronya.LogTest.main(LogTest.java:15)
+[2025-07-03 20:28:41.871] INFO  com.bronya.mybatisDemo - 程序启动了！
+[2025-07-03 20:31:19.965] INFO  com.bronya.LogTest - 这是一条INFO信息
+[2025-07-03 20:31:19.967] DEBUG com.bronya.LogTest - 这是一条DEBUG信息
+[2025-07-03 20:31:19.969] ERROR com.bronya.LogTest - 这是一条ERROR信息
+java.lang.Exception: 测试异常
+	at com.bronya.LogTest.main(LogTest.java:12)
+[2025-07-03 20:31:19.976] ERROR com.bronya.LogTest - 数学运算错误
+java.lang.ArithmeticException: / by zero
+	at com.bronya.LogTest.main(LogTest.java:15)
+[2025-07-03 20:31:27.339] INFO  com.bronya.LogTest - 这是一条INFO信息
+[2025-07-03 20:31:27.341] DEBUG com.bronya.LogTest - 这是一条DEBUG信息
+[2025-07-03 20:31:27.343] ERROR com.bronya.LogTest - 这是一条ERROR信息
+java.lang.Exception: 测试异常
+	at com.bronya.LogTest.main(LogTest.java:12)
+[2025-07-03 20:31:27.343] ERROR com.bronya.LogTest - 数学运算错误
+java.lang.ArithmeticException: / by zero
+	at com.bronya.LogTest.main(LogTest.java:15)
+[2025-07-03 20:32:48.208] INFO  com.bronya.LogTest - 这是一条INFO信息
+[2025-07-03 20:32:48.210] DEBUG com.bronya.LogTest - 这是一条DEBUG信息
+[2025-07-03 20:32:48.211] ERROR com.bronya.LogTest - 这是一条ERROR信息
+java.lang.Exception: 测试异常
+	at com.bronya.LogTest.main(LogTest.java:12)
+[2025-07-03 20:32:48.212] ERROR com.bronya.LogTest - 数学运算错误
+java.lang.ArithmeticException: / by zero
+	at com.bronya.LogTest.main(LogTest.java:15)
+[20:38:25.828] [main] INFO  [36mcom.bronya.LogTest[0;39m - 这是一条INFO信息
+[20:38:25.830] [main] DEBUG [36mcom.bronya.LogTest[0;39m - 这是一条DEBUG信息
+[20:38:25.832] [main] ERROR [36mcom.bronya.LogTest[0;39m - 这是一条ERROR信息
+java.lang.Exception: 测试异常
+	at com.bronya.LogTest.main(LogTest.java:12)
+[20:38:25.832] [main] ERROR [36mcom.bronya.LogTest[0;39m - 数学运算错误
+java.lang.ArithmeticException: / by zero
+	at com.bronya.LogTest.main(LogTest.java:15)
+[20:38:37.806] [main] DEBUG [36morg.apache.ibatis.logging.LogFactory[0;39m - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[20:38:37.819] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[20:38:37.820] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[20:38:37.820] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[20:38:37.820] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[20:38:37.868] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Opening JDBC Connection
+[20:38:37.996] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Created connection 1388278453.
+[20:38:37.996] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52bf72b5]
+[20:38:38.022] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52bf72b5]
+[20:38:38.023] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52bf72b5]
+[20:38:38.023] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Returned connection 1388278453 to pool.
+[21:08:36.341] [main] DEBUG [36morg.apache.ibatis.logging.LogFactory[0;39m - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[21:08:36.359] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:08:36.359] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:08:36.359] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:08:36.359] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:08:36.426] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Opening JDBC Connection
+[21:08:36.585] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Created connection 692331943.
+[21:08:36.586] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@294425a7]
+[21:08:36.612] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@294425a7]
+[21:08:36.612] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@294425a7]
+[21:08:36.613] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Returned connection 692331943 to pool.
+[21:09:18.462] [main] INFO  [36mcom.bronya.LogTest[0;39m - 这是一条INFO信息
+[21:09:18.465] [main] DEBUG [36mcom.bronya.LogTest[0;39m - 这是一条DEBUG信息
+[21:09:18.467] [main] ERROR [36mcom.bronya.LogTest[0;39m - 这是一条ERROR信息
+java.lang.Exception: 测试异常
+	at com.bronya.LogTest.main(LogTest.java:12)
+[21:09:18.467] [main] ERROR [36mcom.bronya.LogTest[0;39m - 数学运算错误
+java.lang.ArithmeticException: / by zero
+	at com.bronya.LogTest.main(LogTest.java:15)
+[21:09:22.011] [main] DEBUG [36morg.apache.ibatis.logging.LogFactory[0;39m - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[21:09:22.026] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:09:22.026] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:09:22.026] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:09:22.026] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:09:22.083] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Opening JDBC Connection
+[21:09:22.230] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Created connection 1388278453.
+[21:09:22.231] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52bf72b5]
+[21:09:22.257] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52bf72b5]
+[21:09:22.257] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52bf72b5]
+[21:09:22.257] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Returned connection 1388278453 to pool.
+[21:11:53.040] [main] DEBUG [36morg.apache.ibatis.logging.LogFactory[0;39m - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[21:11:53.056] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:11:53.056] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:11:53.056] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:11:53.056] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:11:53.111] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Opening JDBC Connection
+[21:11:53.261] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Created connection 952562199.
+[21:11:53.261] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38c6f217]
+[21:11:53.288] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38c6f217]
+[21:11:53.289] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38c6f217]
+[21:11:53.289] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Returned connection 952562199 to pool.
+[21:23:45.566] [main] DEBUG [36morg.apache.ibatis.logging.LogFactory[0;39m - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[21:23:45.585] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:23:45.585] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:23:45.585] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:23:45.585] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:23:45.645] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Opening JDBC Connection
+[21:23:45.820] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Created connection 1388278453.
+[21:23:45.820] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52bf72b5]
+[21:23:45.850] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52bf72b5]
+[21:23:45.850] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52bf72b5]
+[21:23:45.850] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Returned connection 1388278453 to pool.
+[22:04:30.429] [main] DEBUG [36morg.apache.ibatis.logging.LogFactory[0;39m - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[22:04:30.458] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[22:04:30.458] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[22:04:30.458] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[22:04:30.458] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[22:04:30.533] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Opening JDBC Connection
+[22:04:30.696] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Created connection 371800738.
+[22:04:30.696] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@16293aa2]
+[22:04:30.726] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@16293aa2]
+[22:04:30.726] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@16293aa2]
+[22:04:30.726] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Returned connection 371800738 to pool.
