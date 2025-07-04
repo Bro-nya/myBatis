@@ -1,4 +1,9 @@
 package com.bronya.mapper;
 
-public class userMapper {
+import com.bronya.pojo.User;
+
+import java.util.List;
+
+public interface userMapper {
+    List<User> selectAll();
 }

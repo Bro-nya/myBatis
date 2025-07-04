@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-public class mybatisDemo{
+public class MybatisDemo {
     public static void main(String[] args) throws IOException {
         //1.myBatisd的核心配置文件加载，获取SqlSessionFactory
         String resource = "mybatis-config.xml";

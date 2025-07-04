@@ -2,7 +2,7 @@ package com.bronya.pojo;
 
 public class User {
     private int id ;
-    private String user;
+    private String username;
     private String password;
     private String gender;
     private String addr;
@@ -15,12 +15,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUser() {
-        return user;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -51,10 +51,10 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", user='" + user + '\'' +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", gender='" + gender + '\'' +
                 ", addr='" + addr + '\'' +
                 '}';
     }
-}
+}   
