@@ -371,3 +371,42 @@
 [21:35:11.345] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@55141def]
 [21:35:11.347] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@55141def]
 [21:35:11.347] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Returned connection 1427381743 to pool.
+[21:37:53.100] [main] DEBUG [36morg.apache.ibatis.logging.LogFactory[0;39m - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[21:37:53.104] [main] DEBUG [36morg.apache.ibatis.io.VFS[0;39m - Class not found: org.jboss.vfs.VFS
+[21:37:53.104] [main] DEBUG [36morg.apache.ibatis.io.JBoss6VFS[0;39m - JBoss 6 VFS API is not available in this environment.
+[21:37:53.104] [main] DEBUG [36morg.apache.ibatis.io.VFS[0;39m - Class not found: org.jboss.vfs.VirtualFile
+[21:37:53.105] [main] DEBUG [36morg.apache.ibatis.io.VFS[0;39m - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[21:37:53.105] [main] DEBUG [36morg.apache.ibatis.io.VFS[0;39m - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[21:37:53.105] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Find JAR URL: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/pojo
+[21:37:53.106] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Not a JAR: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/pojo
+[21:37:53.130] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Reader entry: User.class
+[21:37:53.130] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Listing file:/D:/juan/mycode/myBatis/target/classes/com/bronya/pojo
+[21:37:53.131] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Find JAR URL: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/pojo/User.class
+[21:37:53.131] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Not a JAR: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/pojo/User.class
+[21:37:53.132] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Reader entry: ����   4 I
+[21:37:53.132] [main] DEBUG [36morg.apache.ibatis.io.ResolverUtil[0;39m - Checking to see if class com.bronya.pojo.User matches criteria [is assignable to Object]
+[21:37:53.159] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:37:53.160] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:37:53.160] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:37:53.160] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - PooledDataSource forcefully closed/removed all connections.
+[21:37:53.161] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Find JAR URL: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/mapper
+[21:37:53.161] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Not a JAR: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/mapper
+[21:37:53.163] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Reader entry: userMapper.class
+[21:37:53.163] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Reader entry: userMapper.xml
+[21:37:53.163] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Listing file:/D:/juan/mycode/myBatis/target/classes/com/bronya/mapper
+[21:37:53.166] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Find JAR URL: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/mapper/userMapper.class
+[21:37:53.166] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Not a JAR: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/mapper/userMapper.class
+[21:37:53.166] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Reader entry: ����   4   com/bronya/mapper/userMapper  java/lang/Object 	selectAll ()Ljava/util/List; 	Signature *()Ljava/util/List<Lcom/bronya/pojo/User;>; 
+[21:37:53.166] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Find JAR URL: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/mapper/userMapper.xml
+[21:37:53.166] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Not a JAR: file:/D:/juan/mycode/myBatis/target/classes/com/bronya/mapper/userMapper.xml
+[21:37:53.167] [main] DEBUG [36morg.apache.ibatis.io.DefaultVFS[0;39m - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+[21:37:53.167] [main] DEBUG [36morg.apache.ibatis.io.ResolverUtil[0;39m - Checking to see if class com.bronya.mapper.userMapper matches criteria [is assignable to Object]
+[21:37:53.239] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Opening JDBC Connection
+[21:37:53.394] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Created connection 1427381743.
+[21:37:53.394] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@55141def]
+[21:37:53.399] [main] DEBUG [36mc.bronya.mapper.userMapper.selectAll[0;39m - ==>  Preparing: select * from tb_user;
+[21:37:53.432] [main] DEBUG [36mc.bronya.mapper.userMapper.selectAll[0;39m - ==> Parameters: 
+[21:37:53.460] [main] DEBUG [36mc.bronya.mapper.userMapper.selectAll[0;39m - <==      Total: 3
+[21:37:53.463] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@55141def]
+[21:37:53.463] [main] DEBUG [36mo.a.i.t.jdbc.JdbcTransaction[0;39m - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@55141def]
+[21:37:53.463] [main] DEBUG [36mo.a.i.d.pooled.PooledDataSource[0;39m - Returned connection 1427381743 to pool.
