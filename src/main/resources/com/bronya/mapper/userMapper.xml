@@ -4,7 +4,14 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace：名称空间-->
 <mapper namespace="com.bronya.mapper.userMapper">
-    <select id="selectAll" resultType="com.bronya.pojo.User">
+    <!--parameterType="int" 参数类型，一般省略-->
+    <!--特殊字符处理方法：
+    1.转义字符：小于号：&lt;
+    2.CDATA区：<![CDATA[
+        <
+    ]]>
+    -->
+    <select id="selectAll" parameterType="int" resultType="com.bronya.pojo.User">
         select * from tb_user;
     </select>
 </mapper>

@@ -9,6 +9,10 @@ public class Brand {
     private String companyName;
     // 排序字段
     private Integer ordered;
+    // 描述信息
+    private String description;
+    // 状态：0：禁用 1：启用
+    private Integer status;
 
     public Integer getId() {
         return id;
@@ -58,9 +62,15 @@ public class Brand {
         this.status = status;
     }
 
-    // 描述信息
-    private String description;
-    // 状态：0：禁用 1：启用
-    private Integer status;
-
+    @Override
+    public String toString() {
+        return "Brand{" +
+                "id=" + id +
+                ", brandName='" + brandName + '\'' +
+                ", companyName='" + companyName + '\'' +
+                ", ordered=" + ordered +
+                ", description='" + description + '\'' +
+                ", status=" + status +
+                '}';
     }
+}

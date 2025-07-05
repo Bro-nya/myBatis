@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace：名称空间-->
+<mapper namespace="com.bronya.mapper.BrandMapper">
+    <!--sql片段-->
+    <!--<sql id="brand_column">
+        id,brand_name as brandName,company_name as companyName,ordered,description,status
+    </sql>
+    <select id="selsctAll" resultType="brand">
+        select
+        <include refid="brand_column"></include>
+        from tb_brand;
+    </select>-->
+
+    <!--resultMap映射-->
+    <!--
+    id:唯一标识 type：映射的类型，支持别名
+    -->
+    <resultMap id="brandResultMap" type="Brand">
+        <!--
+        id：完成主键字段映射
+        result：完成一般字段映射
+            column：表的列明
+            property：实体类的属性名
+        -->
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="brandResultMap">
+        select
+        *
+        from tb_brand;
+    </select>
+    <select id="selectById" resultMap="brandResultMap">
+        select * from tb_brand where id=#{id}
+    </select>
+    <!--条件查询-->
+    <!--<select id="selectByCondition" resultMap="brandResultMap">
+        select *
+        from tb_brand
+        where status = #{status}
+        and company_name like #{companyName}
+        and brand_name like #{brandName}
+    </select>-->
+    <!--动态sql动态条件查询-->
+    <select id="selectByCondition" resultMap="brandResultMap">
+        select *
+        from tb_brand
+        where status = #{status}
+        and company_name like #{companyName}
+        and brand_name like #{brandName}
+    </select>
+</mapper>
