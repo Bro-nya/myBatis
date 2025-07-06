@@ -28,7 +28,6 @@
         <result column="brand_name" property="brandName"/>
         <result column="company_name" property="companyName"/>
     </resultMap>
-
     <select id="selectAll" resultMap="brandResultMap">
         select
         *
@@ -49,8 +48,71 @@
     <select id="selectByCondition" resultMap="brandResultMap">
         select *
         from tb_brand
-        where status = #{status}
+       /* where 1=1*/
+       <where>
+        <if test="status!=null">
+         and status = #{status}
+        </if>
+        <if test="companyName!=null and companyName!=''">
         and company_name like #{companyName}
+        </if>
+        <if test="brandName!=null and brandName!=''">
         and brand_name like #{brandName}
+        </if>
+       </where>
     </select>
+
+    <select id="selectByConditionSingle" resultMap="brandResultMap">
+        select *
+        from tb_brand
+        <where>
+        <choose><!--switch-->
+            <when test="status!=null">status = #{status}</when><!--case-->
+            <when test="companyName!=null and companyName!=''">company_name like #{companyName}</when>
+            <when test="brandName!=null and brandName!=''">brand_name like #{brandName}</when>
+            <!--<otherwise>1=1</otherwise>--><!--用了<where>包裹后，这个相当于default的就可以注释掉了-->
+        </choose>
+        </where>
+    </select>
+    <!--插入-->
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_brand (brand_name, company_name, ordered, description, status)
+            value (#{brandName},#{companyName},#{ordered},#{description},#{status});
+    </insert>
+    <!--修改-->
+    <update id="update">
+        update tb_brand
+        <set>
+        <if test="brandName != null and brandName != ''">
+            brand_name = #{brandName},
+        </if>
+        <if test="companyName != null and companyName != ''">
+            company_name = #{companyName},
+        </if>
+        <if test="ordered != null">
+            ordered = #{ordered},
+        </if>
+        <if test="description != null and description != ''">
+            description = #{description},
+        </if>
+        <if test="status != null">
+            status = #{status}
+        </if>
+    </set>
+        where id = #{id};
+    </update>
+    <delete id="delete">
+        delete from tb_brand where id=#{id}
+    </delete>
+    <delete id="deletes">
+        delete from tb_brand where id in
+        <!--mybatis会将一个数组参数，封装为mapper集合
+        默认：array=数组  collection="array"
+        还可以使用@Param改变mapper集合默认key的名称
+        -->
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+
 </mapper>

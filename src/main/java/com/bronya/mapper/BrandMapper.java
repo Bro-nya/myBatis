@@ -18,4 +18,19 @@ public interface BrandMapper {
      /*List<Brand> selectByCondition(Brand brand);*/
     /// 3.
     List<Brand> selectByCondition(Map map);
+
+    /// 单条件查询
+    List<Brand> selectByConditionSingle(Brand brand);
+
+    ///查询
+    void add(Brand brand);
+
+    /// 修改
+    int update(Brand brand);
+
+    /// 删除
+    int delete(Brand brand);
+    /// 批量删除
+    int deletes(@Param("ids") int[] ids);
+
 }
