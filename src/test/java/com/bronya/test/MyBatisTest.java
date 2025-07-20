@@ -1,7 +1,9 @@
 package com.bronya.test;
 
 import com.bronya.mapper.BrandMapper;
+import com.bronya.mapper.userMapper;
 import com.bronya.pojo.Brand;
+import com.bronya.pojo.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.reflection.ParamNameResolver;
 import org.apache.ibatis.session.SqlSession;
@@ -248,6 +250,25 @@ public class MyBatisTest {
         int count = brandMapper.deletes(ids);
         System.out.println(count);
         sqlSession.commit();//事务提交，因为mybatis把自动提交关了
+        //释放资源
+        sqlSession.close();
+    }
+
+    @Test
+    public void testSelect2() throws IOException {
+        //1.myBatisd的核心配置文件加载，获取SqlSessionFactory
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        //2.获取sqlsession对象，用它来执行sql
+        SqlSession sqlSession = sqlSessionFactory.openSession(false);///autoCommit:是否开启自动提交事务
+
+        //3.获取Mapper接口的代理对象
+        userMapper userMapper = sqlSession.getMapper(userMapper.class);
+
+        //执行方法
+        User count= userMapper.selectAll2(2);
+        System.out.println(count);
         //释放资源
         sqlSession.close();
     }

@@ -2,13 +2,14 @@ package com.bronya.mapper;
 
 import com.bronya.pojo.Brand;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 import java.util.Map;
 
 public interface BrandMapper {
     /// 查看全部
-    public List<Brand> selectAll();
+    List<Brand> selectAll();
     /// 查看详情
     Brand selectById(int id);
     ///条件查询
@@ -32,5 +33,6 @@ public interface BrandMapper {
     int delete(Brand brand);
     /// 批量删除
     int deletes(@Param("ids") int[] ids);
+
 
 }
